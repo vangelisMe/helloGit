@@ -15,13 +15,25 @@ class hello
         $this->aProtasn = $aItems;
     }
 
-    
-    public function getAItems()
+    /**
+     * 
+     * @return string
+     */
+    public function outputItems()
     {
         $strOutput = '';
-        foreach ($this->aProtasn as $item) {
+        foreach ($this->getAItems() as $item) {
             $strOutput .= $item . " ";
         }
         return substr($strOutput, 0, - 1);
+    }
+    
+    /**
+     * 
+     * @return array|unknown
+     */
+    public function getAItems()
+    {
+        return $this->aProtasn;
     }
 }

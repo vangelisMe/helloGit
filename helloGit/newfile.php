@@ -6,4 +6,4 @@ $oOutput = new hello(array(
     "Git"
 ));
 // new comment
-echo $oOutput->getAItems();
+echo $oOutput->outputItems();
